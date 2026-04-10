@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+Thumbs.db
+*.log
+.sisyphus/
+_firecrawl/
+_knowledge/
+_workspace/
+.claude/

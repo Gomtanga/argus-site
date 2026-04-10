@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Argus — Deep Web Research for OpenCode</title>
+  <meta name="description" content="Argus is a Perplexity-style deep web research skill for OpenCode. Multi-source verification, quantitative data, and transparent citations.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        Argus
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+        <a href="#principles" data-i18n="nav.principles">Principles</a>
+        <a href="#get-started" data-i18n="nav.getStarted">Get Started</a>
+        <button class="lang-toggle-mobile" id="langToggleMobile" aria-label="Switch language">
+          <span class="lang-label" id="langLabelMobile">한국어</span>
+        </button>
+      </div>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-label" id="langLabel">한국어</span>
+      </button>
+      <a href="#get-started" class="nav-cta" data-i18n="nav.install">Install</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span data-i18n="hero.badge">Open Source &middot; MIT License &middot; v4.2</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-i18n="hero.title1">Deep web research,</span><br>
+        <span class="text-gradient" data-i18n="hero.title2">verified and transparent.</span>
+      </h1>
+      <p class="hero-desc" data-i18n="hero.desc">
+        Argus is a Perplexity-style research skill for OpenCode that conducts multi-phase web investigations, cross-verifies sources, and delivers answers with full citation transparency.
+      </p>
+      <div class="hero-actions">
+        <a href="#get-started" class="btn btn-primary" data-i18n="hero.getStarted">Get Started</a>
+        <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.howItWorks">How It Works</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label" data-i18n="hero.stat1">Research Phases</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">14+</span>
+          <span class="stat-label" data-i18n="hero.stat2">Max Searches</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label" data-i18n="hero.stat3">Response Modes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">4</span>
+          <span class="stat-label" data-i18n="hero.stat4">Firecrawl Tools</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="features.tag">Features</p>
+        <h2 class="section-title" data-i18n="features.title">Research that doesn't cut corners</h2>
+        <p class="section-desc" data-i18n="features.desc">Argus goes beyond single-query search with a systematic framework designed for depth, accuracy, and accountability.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <h3 data-i18n="features.f1.title">4-Phase Search Framework</h3>
+          <p data-i18n="features.f1.desc">Broad exploration, targeted investigation, cross-verification, and comparative analysis — each query builds on the last.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 data-i18n="features.f2.title">Source Verification</h3>
+          <p data-i18n="features.f2.desc">Every major claim is backed by citations in <code>[web:N]</code> format. No unverified assertions, no single-source reliance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          </div>
+          <h3 data-i18n="features.f3.title">Quantitative Data</h3>
+          <p data-i18n="features.f3.desc">Vague claims are rejected. Argus demands specific numbers — benchmarks, metrics, and measurable evidence.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <h3 data-i18n="features.f4.title">Adaptive Complexity</h3>
+          <p data-i18n="features.f4.desc">Simple questions get quick answers. Deep investigations get up to 14+ searches across multiple phases until saturation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 data-i18n="features.f5.title">Multi-Tool Integration</h3>
+          <p data-i18n="features.f5.desc">Leverages Firecrawl's full suite — search, scrape, agent, and map — for comprehensive web data extraction.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 data-i18n="features.f6.title">Graceful Degradation</h3>
+          <p data-i18n="features.f6.desc">When tools fail or rate limits hit, Argus adapts — reducing scope, using fallbacks, or honestly stating limitations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="how.tag">How It Works</p>
+        <h2 class="section-title" data-i18n="how.title">Systematic depth, not random queries</h2>
+        <p class="section-desc" data-i18n="how.desc">Argus follows a structured 4-phase framework, scaling search intensity based on question complexity.</p>
+      </div>
+      <div class="phases">
+        <div class="phase">
+          <div class="phase-number">A</div>
+          <div class="phase-content">
+            <h3 data-i18n="how.phaseA.title">Broad Exploration</h3>
+            <p data-i18n="how.phaseA.desc">Map the landscape. Identify core concepts, current state, and architecture. <strong>1-3 searches.</strong></p>
+            <div class="phase-examples">
+              <span class="phase-tag" data-i18n="how.phaseA.tag1">Core Concepts</span>
+              <span class="phase-tag" data-i18n="how.phaseA.tag2">Current State</span>
+              <span class="phase-tag" data-i18n="how.phaseA.tag3">Architecture</span>
+            </div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-number">B</div>
+          <div class="phase-content">
+            <h3 data-i18n="how.phaseB.title">Targeted Investigation</h3>
+            <p data-i18n="how.phaseB.desc">Dive deep into implementation details, performance benchmarks, and real-world problems. <strong>4-6 searches.</strong></p>
+            <div class="phase-examples">
+              <span class="phase-tag" data-i18n="how.phaseB.tag1">Tutorials</span>
+              <span class="phase-tag" data-i18n="how.phaseB.tag2">Benchmarks</span>
+              <span class="phase-tag" data-i18n="how.phaseB.tag3">Common Issues</span>
+            </div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-number">C</div>
+          <div class="phase-content">
+            <h3 data-i18n="how.phaseC.title">Cross-Verification</h3>
+            <p data-i18n="how.phaseC.desc">Verify major claims with 2+ independent sources. Check community sentiment and expert criticism. <strong>7-8 searches.</strong></p>
+            <div class="phase-examples">
+              <span class="phase-tag" data-i18n="how.phaseC.tag1">Criticism</span>
+              <span class="phase-tag" data-i18n="how.phaseC.tag2">Community</span>
+              <span class="phase-tag" data-i18n="how.phaseC.tag3">Fact-Check</span>
+            </div>
+          </div>
+        </div>
+        <div class="phase">
+          <div class="phase-number">D</div>
+          <div class="phase-content">
+            <h3 data-i18n="how.phaseD.title">Comparative Analysis</h3>
+            <p data-i18n="how.phaseD.desc">Compare alternatives, assess future trends, and fill remaining gaps. <strong>9-10+ searches.</strong></p>
+            <div class="phase-examples">
+              <span class="phase-tag" data-i18n="how.phaseD.tag1">Alternatives</span>
+              <span class="phase-tag" data-i18n="how.phaseD.tag2">Roadmap</span>
+              <span class="phase-tag" data-i18n="how.phaseD.tag3">Gap Fill</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="complexity-table-wrapper">
+        <h3 class="complexity-title" data-i18n="how.complexity.title">Complexity-Driven Search Depth</h3>
+        <table class="complexity-table">
+          <thead>
+            <tr>
+              <th data-i18n="how.complexity.col1">Complexity</th>
+              <th data-i18n="how.complexity.col2">Searches</th>
+              <th data-i18n="how.complexity.col3">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="complexity-badge low" data-i18n="how.complexity.r1.level">1-2 Simple</span></td>
+              <td>1-3</td>
+              <td data-i18n="how.complexity.r1.example">"What is Docker?"</td>
+            </tr>
+            <tr>
+              <td><span class="complexity-badge mid" data-i18n="how.complexity.r2.level">3 Moderate</span></td>
+              <td>3-6</td>
+              <td data-i18n="how.complexity.r2.example">"How to use React hooks"</td>
+            </tr>
+            <tr>
+              <td><span class="complexity-badge high" data-i18n="how.complexity.r3.level">4 Significant</span></td>
+              <td>5-10</td>
+              <td data-i18n="how.complexity.r3.example">"React vs Vue performance"</td>
+            </tr>
+            <tr>
+              <td><span class="complexity-badge deep" data-i18n="how.complexity.r4.level">5 Deep</span></td>
+              <td>8-14</td>
+              <td data-i18n="how.complexity.r4.example">"K8s migration strategy"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="principles" class="principles">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="principles.tag">Principles</p>
+        <h2 class="section-title" data-i18n="principles.title">What Argus will never do</h2>
+        <p class="section-desc" data-i18n="principles.desc">Clear rules prevent common AI research failures.</p>
+      </div>
+      <div class="principle-grid">
+        <div class="principle-card">
+          <div class="principle-x">&#10005;</div>
+          <p data-i18n="principles.p1">Assert facts without verification through search</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-x">&#10005;</div>
+          <p data-i18n="principles.p2">Make major claims based on a single source</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-x">&#10005;</div>
+          <p data-i18n="principles.p3">Present numerical data without citing a source</p>
+        </div>
+        <div class="principle-card">
+          <div class="principle-x">&#10005;</div>
+          <p data-i18n="principles.p4">Present outdated information as current</p>
+        </div>
+      </div>
+
+      <div class="response-modes">
+        <h3 class="response-modes-title" data-i18n="modes.title">Three Response Modes</h3>
+        <div class="mode-cards">
+          <div class="mode-card">
+            <div class="mode-label">A</div>
+            <h4 data-i18n="modes.m1.title">Implementation</h4>
+            <p data-i18n="modes.m1.flow">Quick Start → Steps → Config → Troubleshooting</p>
+            <div class="mode-triggers" data-i18n="modes.m1.triggers">"how to" · "setup" · "implement"</div>
+          </div>
+          <div class="mode-card">
+            <div class="mode-label">B</div>
+            <h4 data-i18n="modes.m2.title">Architecture</h4>
+            <p data-i18n="modes.m2.flow">Answer → Components → Comparison → Deep Dive</p>
+            <div class="mode-triggers" data-i18n="modes.m2.triggers">"how it works" · "compare" · "architecture"</div>
+          </div>
+          <div class="mode-card">
+            <div class="mode-label">C</div>
+            <h4 data-i18n="modes.m3.title">Research</h4>
+            <p data-i18n="modes.m3.flow">Summary → Analysis → Alternatives → Roadmap</p>
+            <div class="mode-triggers" data-i18n="modes.m3.triggers">"recommend" · "analyze" · "pros cons"</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="get-started" class="get-started">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-i18n="started.tag">Get Started</p>
+        <h2 class="section-title" data-i18n="started.title">Up and running in minutes</h2>
+        <p class="section-desc" data-i18n="started.desc">Argus works as an OpenCode agent skill. Install it, trigger it with natural language, and let it research.</p>
+      </div>
+      <div class="install-steps">
+        <div class="install-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3 data-i18n="started.s1.title">Prerequisites</h3>
+            <p data-i18n="started.s1.desc">You need <strong>OpenCode</strong> and <strong>Firecrawl</strong> tools activated (<code>firecrawl_search</code>, <code>firecrawl_scrape</code>, <code>firecrawl_agent</code>, <code>firecrawl_map</code>).</p>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3 data-i18n="started.s2.title">Install the Skill</h3>
+            <p data-i18n="started.s2.desc">Place the skill file in your OpenCode skills directory. Argus auto-activates when it detects research intent.</p>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3 data-i18n="started.s3.title">Just Ask</h3>
+            <p data-i18n="started.s3.desc">Use natural language: <em>"Compare React vs Vue performance in 2025"</em> — Argus handles the rest.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="trigger-examples">
+        <h3 data-i18n="started.triggers.title">Trigger Words</h3>
+        <div class="trigger-tags">
+          <span>search</span>
+          <span>find</span>
+          <span>investigate</span>
+          <span>compare</span>
+          <span>analyze</span>
+          <span>look up</span>
+          <span>web search</span>
+          <span>research</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <svg class="logo-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+          Argus
+        </a>
+        <p data-i18n="footer.desc">Deep web research for OpenCode.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" data-i18n="footer.docs">Documentation</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 Argus. Open source under MIT.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=2"></script>
+</body>
+</html>
