@@ -39,6 +39,7 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body {
@@ -47,6 +48,7 @@ body {
   background: var(--color-bg);
   line-height: 1.6;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 code {
@@ -231,6 +233,7 @@ code {
   letter-spacing: -0.025em;
   color: var(--color-text);
   margin-bottom: 20px;
+  overflow-wrap: break-word;
 }
 
 .text-gradient {
@@ -299,6 +302,7 @@ code {
 
 .stat {
   text-align: center;
+  min-width: 0;
 }
 
 .stat-number {
@@ -779,6 +783,10 @@ section {
 
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
+  .nav-inner {
+    gap: 20px;
+  }
+
   .nav-links {
     display: none;
     position: absolute;
@@ -834,8 +842,37 @@ section {
     padding-bottom: 48px;
   }
 
+  .hero-title {
+    font-size: 30px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0;
+  }
+
+  .hero-desc {
+    font-size: 16px;
+    max-width: 280px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+
+  .btn {
+    width: min(100%, 280px);
+    justify-content: center;
+  }
+
   .hero-stats {
-    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 20px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .stat-divider {
@@ -844,6 +881,18 @@ section {
 
   section {
     padding: 56px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0;
+  }
+
+  .section-desc {
+    max-width: 280px;
   }
 
   .feature-grid {
@@ -865,14 +914,13 @@ section {
 }
 
 @media (max-width: 480px) {
-  .hero-actions {
-    flex-direction: column;
-    align-items: center;
+  .container {
+    padding: 0 20px;
   }
 
-  .btn {
-    width: 100%;
-    justify-content: center;
+  .hero-title {
+    font-size: 29px;
+    line-height: 1.22;
   }
 
   .complexity-table {

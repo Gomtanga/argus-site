@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Argus — Deep Web Research for OpenCode</title>
-  <meta name="description" content="Argus is a Perplexity-style deep web research skill for OpenCode. Multi-source verification, quantitative data, and transparent citations.">
+  <title>Argus — Evidence-Calibrated Research for OpenCode</title>
+  <meta name="description" content="Argus v4.5 is an evidence-calibrated deep web research skill for OpenCode. It classifies claims by confidence level, checks source quality, and cites every major claim.">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,18 +44,18 @@
     <div class="container">
       <div class="hero-badge">
         <span class="badge-dot"></span>
-        <span data-i18n="hero.badge">Open Source &middot; MIT License &middot; v4.2</span>
+        <span data-i18n="hero.badge">Open Source &middot; MIT License &middot; v4.5</span>
       </div>
       <h1 class="hero-title">
         <span data-i18n="hero.title1">Deep web research,</span><br>
-        <span class="text-gradient" data-i18n="hero.title2">verified and transparent.</span>
+        <span class="text-gradient" data-i18n="hero.title2">calibrated by evidence.</span>
       </h1>
       <p class="hero-desc" data-i18n="hero.desc">
-        Argus is a Perplexity-style research skill for OpenCode that conducts multi-phase web investigations, cross-verifies sources, and delivers answers with full citation transparency.
+        Argus is a Perplexity-style research skill for OpenCode that conducts multi-phase web investigations, grades claim confidence, and keeps every major conclusion traceable to its evidence.
       </p>
       <div class="hero-actions">
         <a href="#get-started" class="btn btn-primary" data-i18n="hero.getStarted">Get Started</a>
-        <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.howItWorks">How It Works</a>
+        <a href="https://github.com/Gomtanga/argus/releases/tag/v4.5" target="_blank" rel="noopener" class="btn btn-secondary" data-i18n="hero.release">v4.5 Release</a>
       </div>
       <div class="hero-stats">
         <div class="stat">
@@ -64,18 +64,18 @@
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <span class="stat-number">14+</span>
-          <span class="stat-label" data-i18n="hero.stat2">Max Searches</span>
+          <span class="stat-number">5</span>
+          <span class="stat-label" data-i18n="hero.stat2">Claim Levels</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">S-D</span>
+          <span class="stat-label" data-i18n="hero.stat3">Source Tiers</span>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
           <span class="stat-number">3</span>
-          <span class="stat-label" data-i18n="hero.stat3">Response Modes</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-number">4</span>
-          <span class="stat-label" data-i18n="hero.stat4">Firecrawl Tools</span>
+          <span class="stat-label" data-i18n="hero.stat4">Response Modes</span>
         </div>
       </div>
     </div>
@@ -85,8 +85,8 @@
     <div class="container">
       <div class="section-header">
         <p class="section-tag" data-i18n="features.tag">Features</p>
-        <h2 class="section-title" data-i18n="features.title">Research that doesn't cut corners</h2>
-        <p class="section-desc" data-i18n="features.desc">Argus goes beyond single-query search with a systematic framework designed for depth, accuracy, and accountability.</p>
+        <h2 class="section-title" data-i18n="features.title">Research that knows its own limits</h2>
+        <p class="section-desc" data-i18n="features.desc">Argus v4.5 goes beyond search volume with a framework designed for conservative claims, source quality, and transparent uncertainty.</p>
       </div>
       <div class="feature-grid">
         <div class="feature-card">
@@ -100,36 +100,36 @@
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3 data-i18n="features.f2.title">Source Verification</h3>
-          <p data-i18n="features.f2.desc">Every major claim is backed by citations in <code>[web:N]</code> format. No unverified assertions, no single-source reliance.</p>
+          <h3 data-i18n="features.f2.title">Evidence Calibration</h3>
+          <p data-i18n="features.f2.desc">Major claims are labeled as Verified, Supported, Anecdotal, Unverified, or Speculative before synthesis.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
           </div>
-          <h3 data-i18n="features.f3.title">Quantitative Data</h3>
-          <p data-i18n="features.f3.desc">Vague claims are rejected. Argus demands specific numbers — benchmarks, metrics, and measurable evidence.</p>
+          <h3 data-i18n="features.f3.title">Numeric Claim Discipline</h3>
+          <p data-i18n="features.f3.desc">Numbers are used only when directly relevant, source-verifiable, dated, and tied to the claim they support.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
           </div>
-          <h3 data-i18n="features.f4.title">Adaptive Complexity</h3>
-          <p data-i18n="features.f4.desc">Simple questions get quick answers. Deep investigations get up to 14+ searches across multiple phases until saturation.</p>
+          <h3 data-i18n="features.f4.title">Claim Coverage Matrix</h3>
+          <p data-i18n="features.f4.desc">Research reports show which claims have primary-source coverage and which need downgrading or verification.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
           </div>
-          <h3 data-i18n="features.f5.title">Multi-Tool Integration</h3>
-          <p data-i18n="features.f5.desc">Leverages Firecrawl's full suite — search, scrape, agent, and map — for comprehensive web data extraction.</p>
+          <h3 data-i18n="features.f5.title">Source Tiering</h3>
+          <p data-i18n="features.f5.desc">Sources are sorted from S-tier primary evidence to D-tier weak leads, preventing weak sources from sounding authoritative.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <h3 data-i18n="features.f6.title">Graceful Degradation</h3>
-          <p data-i18n="features.f6.desc">When tools fail or rate limits hit, Argus adapts — reducing scope, using fallbacks, or honestly stating limitations.</p>
+          <h3 data-i18n="features.f6.title">Strong Language Guardrails</h3>
+          <p data-i18n="features.f6.desc">Terms like standard, production-proven, verified, and community consensus require qualifying evidence.</p>
         </div>
       </div>
     </div>
@@ -139,8 +139,8 @@
     <div class="container">
       <div class="section-header">
         <p class="section-tag" data-i18n="how.tag">How It Works</p>
-        <h2 class="section-title" data-i18n="how.title">Systematic depth, not random queries</h2>
-        <p class="section-desc" data-i18n="how.desc">Argus follows a structured 4-phase framework, scaling search intensity based on question complexity.</p>
+        <h2 class="section-title" data-i18n="how.title">Systematic depth, calibrated conclusions</h2>
+        <p class="section-desc" data-i18n="how.desc">Argus follows a structured 4-phase framework, then downgrades claims when the evidence is weak or indirect.</p>
       </div>
       <div class="phases">
         <div class="phase">
@@ -159,7 +159,7 @@
           <div class="phase-number">B</div>
           <div class="phase-content">
             <h3 data-i18n="how.phaseB.title">Targeted Investigation</h3>
-            <p data-i18n="how.phaseB.desc">Dive deep into implementation details, performance benchmarks, and real-world problems. <strong>4-6 searches.</strong></p>
+            <p data-i18n="how.phaseB.desc">Dive deep into implementation details, directly relevant metrics, and real-world problems. <strong>4-6 searches.</strong></p>
             <div class="phase-examples">
               <span class="phase-tag" data-i18n="how.phaseB.tag1">Tutorials</span>
               <span class="phase-tag" data-i18n="how.phaseB.tag2">Benchmarks</span>
@@ -171,7 +171,7 @@
           <div class="phase-number">C</div>
           <div class="phase-content">
             <h3 data-i18n="how.phaseC.title">Cross-Verification</h3>
-            <p data-i18n="how.phaseC.desc">Verify major claims with 2+ independent sources. Check community sentiment and expert criticism. <strong>7-8 searches.</strong></p>
+            <p data-i18n="how.phaseC.desc">Classify major claims by evidence level and check primary-source coverage. <strong>7-8 searches.</strong></p>
             <div class="phase-examples">
               <span class="phase-tag" data-i18n="how.phaseC.tag1">Criticism</span>
               <span class="phase-tag" data-i18n="how.phaseC.tag2">Community</span>
@@ -194,35 +194,35 @@
       </div>
 
       <div class="complexity-table-wrapper">
-        <h3 class="complexity-title" data-i18n="how.complexity.title">Complexity-Driven Search Depth</h3>
+        <h3 class="complexity-title" data-i18n="how.complexity.title">Evidence Confidence Levels</h3>
         <table class="complexity-table">
           <thead>
             <tr>
-              <th data-i18n="how.complexity.col1">Complexity</th>
-              <th data-i18n="how.complexity.col2">Searches</th>
-              <th data-i18n="how.complexity.col3">Example</th>
+              <th data-i18n="how.complexity.col1">Level</th>
+              <th data-i18n="how.complexity.col2">Evidence</th>
+              <th data-i18n="how.complexity.col3">Wording</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><span class="complexity-badge low" data-i18n="how.complexity.r1.level">1-2 Simple</span></td>
-              <td>1-3</td>
-              <td data-i18n="how.complexity.r1.example">"What is Docker?"</td>
+              <td><span class="complexity-badge low" data-i18n="how.complexity.r1.level">Verified</span></td>
+              <td data-i18n="how.complexity.r1.evidence">Official or primary source</td>
+              <td data-i18n="how.complexity.r1.example">"confirmed"</td>
             </tr>
             <tr>
-              <td><span class="complexity-badge mid" data-i18n="how.complexity.r2.level">3 Moderate</span></td>
-              <td>3-6</td>
-              <td data-i18n="how.complexity.r2.example">"How to use React hooks"</td>
+              <td><span class="complexity-badge mid" data-i18n="how.complexity.r2.level">Supported</span></td>
+              <td data-i18n="how.complexity.r2.evidence">Credible secondary sources</td>
+              <td data-i18n="how.complexity.r2.example">"evidence suggests"</td>
             </tr>
             <tr>
-              <td><span class="complexity-badge high" data-i18n="how.complexity.r3.level">4 Significant</span></td>
-              <td>5-10</td>
-              <td data-i18n="how.complexity.r3.example">"React vs Vue performance"</td>
+              <td><span class="complexity-badge high" data-i18n="how.complexity.r3.level">Anecdotal</span></td>
+              <td data-i18n="how.complexity.r3.evidence">Community reports</td>
+              <td data-i18n="how.complexity.r3.example">"users report"</td>
             </tr>
             <tr>
-              <td><span class="complexity-badge deep" data-i18n="how.complexity.r4.level">5 Deep</span></td>
-              <td>8-14</td>
-              <td data-i18n="how.complexity.r4.example">"K8s migration strategy"</td>
+              <td><span class="complexity-badge deep" data-i18n="how.complexity.r4.level">Unverified</span></td>
+              <td data-i18n="how.complexity.r4.evidence">Weak or single source</td>
+              <td data-i18n="how.complexity.r4.example">"requires verification"</td>
             </tr>
           </tbody>
         </table>
@@ -235,7 +235,7 @@
       <div class="section-header">
         <p class="section-tag" data-i18n="principles.tag">Principles</p>
         <h2 class="section-title" data-i18n="principles.title">What Argus will never do</h2>
-        <p class="section-desc" data-i18n="principles.desc">Clear rules prevent common AI research failures.</p>
+        <p class="section-desc" data-i18n="principles.desc">Clear rules prevent common AI research failures and overconfident reports.</p>
       </div>
       <div class="principle-grid">
         <div class="principle-card">
@@ -248,11 +248,11 @@
         </div>
         <div class="principle-card">
           <div class="principle-x">&#10005;</div>
-          <p data-i18n="principles.p3">Present numerical data without citing a source</p>
+          <p data-i18n="principles.p3">Force numbers just to satisfy a metric quota</p>
         </div>
         <div class="principle-card">
           <div class="principle-x">&#10005;</div>
-          <p data-i18n="principles.p4">Present outdated information as current</p>
+          <p data-i18n="principles.p4">Call something standard, verified, or production-proven without qualifying evidence</p>
         </div>
       </div>
 
@@ -287,28 +287,28 @@
       <div class="section-header">
         <p class="section-tag" data-i18n="started.tag">Get Started</p>
         <h2 class="section-title" data-i18n="started.title">Up and running in minutes</h2>
-        <p class="section-desc" data-i18n="started.desc">Argus works as an OpenCode agent skill. Install it, trigger it with natural language, and let it research.</p>
+        <p class="section-desc" data-i18n="started.desc">Argus works as an OpenCode agent skill. Install it, trigger it with natural language, and let it research conservatively.</p>
       </div>
       <div class="install-steps">
         <div class="install-step">
           <div class="step-number">1</div>
           <div class="step-content">
             <h3 data-i18n="started.s1.title">Prerequisites</h3>
-            <p data-i18n="started.s1.desc">You need <strong>OpenCode</strong> and <strong>Firecrawl</strong> tools activated (<code>firecrawl_search</code>, <code>firecrawl_scrape</code>, <code>firecrawl_agent</code>, <code>firecrawl_map</code>).</p>
+            <p data-i18n="started.s1.desc">You need <strong>OpenCode</strong> and <strong>Firecrawl</strong> access through the CLI, Python SDK, or direct HTTP.</p>
           </div>
         </div>
         <div class="install-step">
           <div class="step-number">2</div>
           <div class="step-content">
             <h3 data-i18n="started.s2.title">Install the Skill</h3>
-            <p data-i18n="started.s2.desc">Place the skill file in your OpenCode skills directory. Argus auto-activates when it detects research intent.</p>
+            <p data-i18n="started.s2.desc">Install the v4.5 skill files in your OpenCode skills directory, including the <code>references/</code> folder.</p>
           </div>
         </div>
         <div class="install-step">
           <div class="step-number">3</div>
           <div class="step-content">
             <h3 data-i18n="started.s3.title">Just Ask</h3>
-            <p data-i18n="started.s3.desc">Use natural language: <em>"Compare React vs Vue performance in 2025"</em> — Argus handles the rest.</p>
+            <p data-i18n="started.s3.desc">Use natural language: <em>"Compare React vs Vue performance in 2026 and flag weak evidence"</em> — Argus handles the rest.</p>
           </div>
         </div>
       </div>
@@ -343,15 +343,15 @@
       </div>
       <div class="footer-links">
         <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>
-        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-        <a href="#" data-i18n="footer.docs">Documentation</a>
+        <a href="https://github.com/Gomtanga/argus" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Gomtanga/argus/releases/tag/v4.5" target="_blank" rel="noopener" data-i18n="footer.docs">v4.5 Release</a>
       </div>
       <div class="footer-copy">
-        &copy; 2025 Argus. Open source under MIT.
+        &copy; 2026 Argus. Open source under MIT.
       </div>
     </div>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
